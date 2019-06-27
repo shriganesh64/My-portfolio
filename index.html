@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,
+	user-scalable=no">
+
+	<meta charset="UTF-8">
+	<title>Shri Ganesh</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+</head>
+<body>
+	<div container-head>
+
+
+		<div class="navbar">
+			<div class="component font-text">
+				<a href="#home" class="nav-link one" ">Home</a>
+			</div>
+			<div class="component font-text">
+				<a href="#about" class="nav-link">About</a>
+			</div>
+			<div class="component font-text">
+				<a href="#skill" class="nav-link">Skills</a>
+			</div>
+			<div class="component font-text">
+				<a href="#mywork" class="nav-link">My Work</a>
+			</div>
+			<div class="component font-text">
+				<a href="#contactme" class="nav-link">Contact Me</a>
+			</div>
+			
+		</div>
+
+
+		<div class="container" id="home">
+			<div class="heading">
+				<h1 class="heading-hello-main font-text">
+					Hi, I am Shri Ganesh.
+				</h1>
+				<h2 class="heading-hello-sub font-text">
+					<!-- A coding enthusiast. -->
+					A Front-End Web Designer/Developer
+				</h2>
+
+				<a href="#about" class="btn btn--animated">know more about me</a>
+			</div>
+		</div>
+
+		<div class="container-2" id="about">
+			<h2 class="about-text font-text">About Me</h2>
+
+			<p class="about-text-content font-text"> Hi I'm Shri Ganesh.<br>
+				A budding Web Designer and Developer currently a<br>
+				Computer Science And Engineering alumni from<br>
+				MVJ College Of Engineering, Bengaluru.<br>
+				I'm a Web Designer and Front-End Developmental<br>
+				enthusiast.
+			</p>
+		</div>
+		
+		<div class="container-3" id="skill">
+			<div class="skill-head font-text">
+				<h2>Tools that i use</h2>
+			</div>
+			<div class="skill-sub">
+				<div class="skill-sub-icon">
+					<img src="images/HTML5.png" class="icon">
+					<p class="icon-text">HTML 5</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/css.png" class="icon">
+					<p class="icon-text">CSS 3</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/javascript.png" class="icon">
+					<p class="icon-text">JAVASCRIPT</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/EC1.png" class="icon">
+					<p class="icon-text">ES 6</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/jquery2.jpg" class="icon">
+					<p class="icon-text">JQUERY</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/git.png" class="icon">
+					<p class="icon-text">GITHUB</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/mysql.png" class="icon">
+					<p class="icon-text">MY SQL</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/ADOBE-ILLUSTRATOR.png"  class="icon">
+					<p class="icon-text">ADOBE ILLUSTRATOR</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/ADOBE-AFTER-EFFECTS.png"  class="icon">
+					<p class="icon-text">ADOBE AFTER EFFECTS</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/FIGMA.png"  class="icon">
+					<p class="icon-text">FIGMA</p>
+				</div>
+
+				<div class="skill-sub-icon">
+					<img src="images/sass.png"  class="icon">
+					<p class="icon-text">SASS</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-4" id="mywork">
+			<div class="my-works font-text">
+				<h2 class="my-works-head">My Work</h2>
+			</div>
+
+			<div class="my-works-content">
+				<div class="my-works-content-sub">
+					<p class="portfolio-text font-text">shopay logo</p> <br>
+					<a href="https://www.shopay.org" class="portfolio-link"><img src="images/shopay.png" class="portfolio-image"></a>
+				</div>
+
+				<div class="my-works-content-sub">
+					<p class="portfolio-text font-text">harbor logo</p> <br>
+					<a href="#" class="portfolio-link"><img src="images/harbor-logo.png" class="portfolio-image"></a>
+				</div>
+
+				<div class="my-works-content-sub">
+					<p class="portfolio-text font-text">blog asset</p> <br>
+					<a href="https://dribbble.com/shots//6673390-My-Blog" class="portfolio-link"><img src="images/blog-asset.jpg" class="portfolio-image"></a>
+				</div>
+
+				<div class="my-works-content-sub">
+					<p class="portfolio-text font-text">My Portfolio</p> <br>
+					<a href="#" class="portfolio-link"><img src="images/my-portfolio.png" class="portfolio-image"></a>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="container-5" id="contactme">
+			<div class="contact-me">
+				<h2 class="contact-me-head font-text">Contact me</h2>	
+			</div>
+			<div class="contact-me-heading">
+				<img src="images/shri-ganesh.jpeg" class="my-image">
+				<p class="email font-text">Get in touch with me: shriganesh64@gmail.com</p>
+			</div>
+			<div class="icon-group">
+				<a href="https://www.linkedin.com/in/shri-ganesh-holebagil-47b469154/"><img src="images/linkedin.png" class="image-icon"></a>
+				<a href="https://github.com/shriganesh64"><img src="images/github.png" class="image-icon"></a>
+				
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
